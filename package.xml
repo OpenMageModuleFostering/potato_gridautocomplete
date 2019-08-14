@@ -1,0 +1,35 @@
+<?xml version="1.0"?>
+<package>
+    <name>Potato_Gridautocomplete</name>
+    <version>1.0.0</version>
+    <stability>stable</stability>
+    <license uri="http://opensource.org/licenses/osl-3.0.php">OSL v3.0</license>
+    <channel>community</channel>
+    <extends/>
+    <summary>Grid Autocomplete by PotatoCommerce&#xD;
+Module adds simple auto-complete in Magento grids.</summary>
+    <description>By default functionality works in these columns:&#xD;
+&#xD;
+Backend &gt; Sales &gt; Orders&#xD;
+&#x201C;Order ID&#x201D;&#xD;
+&#x201C;Bill To Name&#x201D;&#xD;
+&#x201C;Ship To Name&#x201D;&#xD;
+&#xD;
+Backend &gt; Catalog &gt; Manage Products&#xD;
+&#x201C;Name&#x201D;&#xD;
+&#x201C;SKU&#x201D;&#xD;
+&#xD;
+Backend &gt; Customers &gt; Manage Customers&#xD;
+&#x201C;Name&#x201D;&#xD;
+&#x201C;Email column&#x201D;&#xD;
+&#x201C;Telephone&#x201D;&#xD;
+&#x201C;ZIP&#x201D;&#xD;
+&#x201C;State/Province&#x201D;</description>
+    <notes>* Abitity to easy autocomplete selection in filters of some grids</notes>
+    <authors><author><name>PotatoCommerce</name><user>potatocommerce</user><email>potatocommerce@gmail.com</email></author></authors>
+    <date>2014-03-17</date>
+    <time>19:25:33</time>
+    <contents><target name="magelocal"><dir name="Potato"><dir name="Gridautocomplete"><dir name="Block"><dir name="Adminhtml"><file name="Abstract.php" hash="dd2eaafefdef6ea55a5257609ef2d01c"/><dir name="Catalog"><dir name="Product"><file name="Js.php" hash="81436718a1bac52687f422b4d9386710"/></dir></dir><dir name="Customer"><dir name="Index"><file name="Js.php" hash="de559fcf02447af1b18fe690d6e93f10"/></dir></dir><dir name="Sales"><dir name="Creditmemo"><file name="Js.php" hash="77255bbf8230b6fb63f3ca2a556d2b34"/></dir><dir name="Invoice"><file name="Js.php" hash="f66bcb56e829a86454bfe1dea134d8cf"/></dir><dir name="Order"><file name="Js.php" hash="ae2213555b7ef029ff8caeab6cfe83e6"/></dir><dir name="Shipment"><file name="Js.php" hash="7d091a24af5e95a8115dd5f718569b42"/></dir></dir></dir></dir><dir name="controllers"><dir name="Adminhtml"><file name="IndexController.php" hash="5033e9a901e523646b7e7eac78de7d8f"/></dir></dir><dir name="etc"><file name="config.xml" hash="1d9c0e4667f8127ba7a9094da52118ea"/></dir></dir></dir></target><target name="magedesign"><dir name="adminhtml"><dir name="default"><dir name="default"><dir name="template"><dir name="potato_gridautocomplete"><file name="js.phtml" hash="529fc17392d3ef96f8382d75b7baac2a"/></dir></dir><dir name="layout"><file name="po_gridautocomplete.xml" hash="0ab49de41c697c4427cb8d2890c2a2ff"/></dir></dir></dir></dir></target><target name="mageetc"><dir name="modules"><file name="Potato_Gridautocomplete.xml" hash="2b61654e75e4116a94f74ca81110bd3d"/></dir></target><target name="mageskin"><dir name="adminhtml"><dir name="default"><dir name="default"><dir name="po_gridautocomplete"><dir name="css"><file name="style.css" hash="9ed6a6f4d41b0720996b5472be65df8c"/></dir><dir name="js"><file name="autocomplete.js" hash="1bb1320dec6265e8fe0675085cfa831e"/></dir></dir></dir></dir></dir></target></contents>
+    <compatible/>
+    <dependencies><required><php><min>5.1.0</min><max>6.0.0</max></php></required></dependencies>
+</package>

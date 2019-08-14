@@ -1,0 +1,21 @@
+<script type="text/javascript">
+(function(){
+    <?php if (count($this->getItems()) > 0): ?>
+	var originalPreInitCallback = <?php echo $this->getJsGridObjectName();?>.preInitCallback;
+    <?php echo $this->getJsGridObjectName();?>.preInitCallback = function(){
+		originalPreInitCallback();
+        <?php foreach ($this->getItems() as $item):?>
+        new potatoGridAutocomplete(
+            <?php echo $item->getTargetElIds();?>,
+            "po-gridautocomplete-container-" + <?php echo $item->getId();?>,
+            <?php echo $item->getUrl();?>,
+            {}
+        );
+        <?php endforeach;?>
+    };
+    Event.observe(window, 'load', function(e){
+        <?php echo $this->getJsGridObjectName();?>.preInitCallback();
+    });
+    <?php endif;?>
+})();
+</script>

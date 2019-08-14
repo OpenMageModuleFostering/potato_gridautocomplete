@@ -1,0 +1,17 @@
+{
+    "name": "OpenMageModuleFostering/Potato_Gridautocomplete",
+    "type": "magento-module",
+    "license": "OSL-v3.0",
+    "homepage": "",
+    "description": "Grid Autocomplete by PotatoCommerce
+Module adds simple auto-complete in Magento grids.",
+    "authors": [
+    {
+        "name": "PotatoCommerce",
+        "email": "potatocommerce@gmail.com"
+    }
+],
+    "suggest": {
+        "magento-hackathon/magento-composer-installer": "*"
+    }
+}
